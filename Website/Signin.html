@@ -1,0 +1,120 @@
+<html>
+<head>
+	<title>Crescent Technosoft</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="Images\clogo.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Fjalla+One|Lobster|Nunito|Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style type="text/css">
+    	@import url("https://fonts.googleapis.com/css?family=Montserrat");
+    h1{color:black;}
+    h3,a{color: white;}
+    body{
+    	background-image: url("https://secureservercdn.net/ip-ac.mwp2.iad2.godaddy.com/06d.f45.godaddywp.com/wp-content/uploads/2018/08/dark-blue-texture-14411.jpg");
+      background-repeat: no-repeat;
+    	padding: 0;
+    	margin: 0;
+    	font-family: sans-serif;
+    }
+    .scroll {
+        background-color: black;
+        position: fixed;
+        top: 0;
+      }
+
+      div.scroll a{
+        display: inline-block;
+        color: #ffad33;
+        text-align: end;
+        padding: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-style: bold;
+        font-size: 28px; 
+      }
+      div.scroll a:hover {
+        background-color: #777;
+        font-family: sans-serif;
+        font-style: bold;
+      }
+    input
+    {
+    	padding: 5px 10px;
+    	border-radius: 5px;
+    }
+    input:focus
+    {
+    	box-shadow: 2px 2px 2px blue;
+    	padding: 5px; 
+    }
+    #a2
+    {
+    	font-family: cursive;
+    	align-content: center;
+    	background-image: url("https://i.pinimg.com/originals/6b/cf/54/6bcf54ccdf5cee2640a316daa0c40363.jpg");
+      background-size: 1000px 1000px;
+      background-repeat: no-repeat;
+    	height: 320px;
+    	width: 540px;
+      margin-left: 400px;
+      padding: 20PX;
+    }
+    td
+    {
+       font-weight: bold;	
+       padding: 15px;
+       font-size: 18px;
+    }
+    #btn
+    {
+    	font-family: cursive;
+    	 background-color: black;
+         border: none;
+         color: white;
+         padding: 10px 50px;
+         text-align: center;
+         float:right;
+         margin-right: -200px;
+
+    }
+      </style>
+    </head>
+<body>
+		<div style="position: sticky;top: 0;" class="scroll">
+      <img style="margin-right: 30px;" src="Images\clogo.jpg" align= "left" width="170px" height="90px"><br>
+      <a href="redirect.php"><i class="fa fa-home">&nbsp;</i>Home</a>
+      <a href="signin.html"><i class="fa fa-sign-in">&nbsp;</i>Sign in</a>
+      <a href="Signup.html"><i class="fa fa-registered">&nbsp;</i>Sign Up</a>
+      <a href="contact1.html"><i class="fa fa-user">&nbsp;</i>Contact us</a>
+      <a href="about.html"><i class="fa fa-question-circle-o">&nbsp;</i>Help Desk</a>
+      <a href="about.html"><i class="fa fa-street-view">&nbsp;</i>About us</a>
+    </div>
+		<br><br><br>
+		<div id="a2">
+		<center><h1 style="font-family: sans-serif;"><i class="fa fa-sign-in"></i>&nbsp;Login Form</h1></center>
+		<table>
+		<form id="f1" action="signin.php" method="post">
+			<tr>
+				<td>Email id:</td>
+				<td><input type="email" name ="t1" size="30"/></td>
+			</tr>
+			<tr>
+				<td>Password:</td>
+				<td><input type="Password" name="t2" size="30"/></td>
+			</tr>
+			<tr>
+				<td>
+            <input type="Submit" name="btn" id="btn" value="Submit" onclick="validate()" align="right"></td>
+              <td><br><a href="forgot.php" style="margin-left:200px;color: blue;">Forgot Password</a>
+               </td>
+			</tr>
+
+		</form>
+</table>
+</div>
+<<h3 style="margin-left: 400px;font-family: cursive;color:#f69314;  ">Don't Have a Account? then register here</h3>
+			<a style="margin-left: 400px; font-family: cursive;font-size: 20px;color: red;" href="signup.html">Register</a><br><br>
+	</body>
+</html>

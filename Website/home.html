@@ -1,0 +1,493 @@
+<html>
+<head>
+  <title>Crescent Technosoft</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="Images\clogo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Fjalla+One|Lobster|Nunito|Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\xampp\htdocs\Intern\font-mfizz-2.4.1\font-mfizz.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  background-color: black;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: black; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 26px;
+  color: #ffad33;
+  text-align: center;
+  font-family: sans-serif;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+
+.subnav .subnavbtn {
+  font-size: 28px;  
+  border: none;
+  outline: none;
+  color: #ffad33;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-weight: bold;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: #107595;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  background-color: #107595;
+}
+
+.subnav-content a {
+
+  color: #ffad33;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 3px;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+ 
+
+.txt
+{
+  margin-top: -200px;
+  text-align: center;
+  padding: 15px;
+}
+
+div.hero
+{
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+
+.boxyy 
+ {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.box {
+  background-color: lightgrey;
+  width: 200px;
+  border: 10px solid white;
+  padding: 10px 45px;
+  margin: 10px auto;
+  box-shadow: 0 0 15px black;
+  font-weight: bold;
+  text-align: center;
+  color: black;
+  font-family: sans-serif;
+  font-size: 15px;
+}
+a
+{
+  text-decoration: none;
+  color: blue;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+.modal,.modal1,.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: white;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 40%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: black;
+  color:#ffad33 ;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #5cb85c;
+  color: white;
+}
+
+#btn1,#btn2,#btn3
+{
+  color:white;
+  font-weight: bold;
+  font-size: 16px;
+  width: auto;
+  height: 25px;
+  background-color: blue;
+}
+footer {
+  margin-top: 2rem;
+  background: var(--dark);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+div.address
+{
+  text-align: left;
+  font-style: sans-serif;
+}
+
+div.address p
+{
+
+  color: #ffad33;
+}
+div.address h4
+{
+
+  color: #0000cc;
+}
+div.midd,.rig
+{
+  
+  font-style: sans-serif;
+}
+
+div.midd,.rig p
+{
+
+  color: #ffad33;
+}
+div.int a
+{
+   padding: 15px;
+  font-size: 20px;
+  width: 18px;
+  height:12px;
+  text-align: center;
+  text-decoration: none;
+}
+
+div.rig
+{
+  text-align: right;
+  margin-right: 120px;
+  margin-top: -100PX
+}
+
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <img style="margin-right: 30px;" src="Images\clogo.jpg" align= "left" width="170px" height="90px"><br>
+      <a href="home.html"><i class="fa fa-home">&nbsp;</i>Home</a>
+
+  <div class="subnav">
+    <button class="subnavbtn"><i class="fas fa-user-tie"></i>&nbsp;Careers&nbsp;<i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content"style="width:200px;">
+      <a href="software_developer.html">Software Developer</a>
+  <a href="designer.html">Software Designer</a>
+  <a href="content.html">Content Writer</a>
+  <a href="developer_jobs.html">Web Developer</a>
+  <a href="marketing.html">Marketing Jobs<br></a>
+  <a href="internship.html">Internships</a>
+  </div>
+  </div>
+
+  <div class="subnav">
+    <button class="subnavbtn"><i class="fas fa-cog"></i>&nbsp;Services <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content" style="width:310px;">
+    <a href="HMS.html">Hospital Management Software</a><br>
+  <a href="lab.html">Lab Management Software</a><br>
+  <a href="pharma.html">Pharma Management Software</a><br>
+  <a href="web.html">Web based Application</a><br>
+  <a href="inventory.html">Inventory Managent Software</a><br>
+  <a href="Library.html">Library Management Software</a><br>
+  <a href="payroll.html">Payroll Software</a><br>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"><i class="fas fa-user-graduate"></i>&nbsp;Education <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content" style="width:300px;">
+      <a href="prog.html">Programming Courses</a><br>
+  <a href="web_development.html">Web Development Courses</a><br>
+  <a href="Photo.html">Photography Courses</a><br>
+  <a href="Database.html">Database Courses</a><br>
+  <a href="marketing_course.html">Marketing Courses</a><br>
+  <a href="Security.html">Ethical Hacking and Security</a>
+    </div>
+  </div>
+  
+  <a href="about.html"><i class="fa fa-street-view">&nbsp;</i>About us</a>
+  <a href="logout.php"><i class="fa fa-sign-out">&nbsp;</i>Logout</a>
+</div>
+<div class="img">
+<img src="Images/apex8.jpg" style="height:100%;width: 100%;">
+</div>
+<div class="hero">
+      <br><h1 style="color:#ffad33;font-weight:bold; font-family: cursive;padding: 10px;">Welcome to Crescent Technosoft..!!</h1>
+      <p style="font-weight:bold;font-family:cursive;font-size: 20px;text-align:left;color:white;margin-bottom: -180px;">Crescent Technosoft since 2005 was formed with a powerful belief among its founders that the technology could enhance and transform businesses in an amazing way. This belief continues to drive us towards our mission of helping discover and implement the best online strategy for businesses, institutions and professionals.<br>Crescent Technosoft provides end-to-end business solutions that leverage technology. We provide solutions for a dynamic environment where business and technology strategies converge. Our approach focuses on new ways of business combining IT innovation and adoption while also leveraging an organization's current IT assets.</p>
+
+      
+  </div>
+  <section class="boxyy">
+       <div class="box" align="left" style="margin-left: 80px;">
+        <i class="fas fa-chart-pie fa-4x"></i><br><br>
+        <button id="btn1">Jobs</button>
+        <div id="myModal" class="modal">
+      <div class="modal-content">
+         <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Jobs</h2>
+         </div>
+
+      <div class="modal-body">
+  <br>
+  <a href="software_developer.html">Software Developer</a><br><br>
+  <a href="designer.html">Software Designer</a><br><br>
+  <a href="content.html">Content Writer</a><br><br>
+  <a href="developer_jobs.html">Web Developer</a><br><br>
+  <a href="marketing.html">Marketing</a><br><br>
+  <a href="internship.html">Internships</a><br><br>
+  
+
+    </div>
+</div>
+</div>
+ </div>
+
+ <div class="box" align="center">
+        <i class="fas fa-globe fa-4x"></i><br><br>
+        <button id="btn2">Education and Learning</button>
+        <div id="myModall" class="modal1">
+      <div class="modal-content">
+         <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Education and Learning</h2>
+         </div>
+      <div class="modal-body">
+  <br><a href="prog.html">Programming Tutorials</a><br><br>
+  <a href="web_development.html">Web Development Tutorials</a><br><br>
+  <a href="Photo.html">Photography Tutorials</a><br><br>
+  <a href="Database.html">Database Tutorials</a><br><br>
+  <a href="marketing_course.html">Marketing Tutorials</a><br><br>
+  <a href="Security.html">Ethical Hacking and Internet Security</a><br><br>
+  
+
+    </div>
+</div>
+</div>
+ </div>
+ <div class="box" align="right">
+        <i class="fas fa-cog fa-4x"></i><br><br>
+        <button id="btn3">Services</button>
+        <div id="myModalll" class="modal2">
+      <div class="modal-content">
+         <div class="modal-header">
+          <span class="close">&times;</span>
+          <h2>Services</h2>
+         </div>
+
+      <div class="modal-body">
+  <br><a href="HMS.html">Hospital Management Software</a><br><br>
+  <a href="lab.html">Lab Management Software</a><br><br>
+  <a href="CMS.html">Clinic Management Software</a><br><br>
+  <a href="pharma.html">Pharma Management Software</a><br><br>
+  <a href="web.html">Web based Application</a><br><br>
+  <a href="inventory.html">Inventory Managent Software</a><br><br>
+  <a href="Library.html">Library Management Software</a><br><br>
+  <a href="payroll.html">Payroll Software</a><br><br>
+</div>
+</div>
+</div>
+</div>
+
+     
+    </section>
+
+
+    <footer>
+       
+ <div class="address">
+<h4 style="font-size: 23px; color: #0000cc" align="left">Main Office</h4>
+<p>725-C,W-Block,</p>
+<p>East Gate Road</p>
+<p>Anna Nagar West</p>
+<p>Chennai - 600 101</p>
+<p>Tamil Nadu, India.</p>
+<p>Contact No :+91 8870532269</p>
+<p> CustomerCare No:91-4443556696.</p>
+</div>
+
+<div class="midd">
+<h4 style="font-size: 23px; color:#0000cc;margin-top: -300px;">Branches</h4>
+<h4>Novel Tech Park</h4>
+<p>Kudlu Gate, Hosur Road,</p>
+<p>Bangalore-68</p>
+<p>Karnataka</p>
+<p>Contact No :+91 9944992460</p>
+</div>
+
+<div class="int">    
+<a href="https://www.facebook.com/CrescentTechnosoft/" class="fa fa-facebook"></a>
+        <a href="https://twitter.com/syedMahe?s=09nsertion:
+" class="fa fa-twitter"></a>
+      <p style="font-size: 18px; font-family: sans-serif; color:blue;">Crescent Tech &copy; 2019</p>
+    </footer>
+</div>
+<div class="rig">
+<h4 style="font-size: 23px; color:#0000cc;margin-top: -350px;">Email</h4>
+<p>info@crescenttechnosoft.com</p>
+<p>crescentonline@gmail.com</p><br>
+</div>
+</footer>
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+var modal1 = document.getElementById("myModall");
+var modal2 = document.getElementById("myModalll");
+
+
+// Get the button that opens the modal
+var btn1 = document.getElementById("btn1");
+var btn2 = document.getElementById("btn2");
+var btn3 = document.getElementById("btn3");
+
+// Get the <span> element that closes the modal
+var span1 = document.getElementsByClassName("close")[0];
+var span2 = document.getElementsByClassName("close")[1];
+var span3 = document.getElementsByClassName("close")[2];
+// When the user clicks the button, open the modal 
+btn1.onclick = function() {
+  modal.style.display = "block";
+}
+
+btn2.onclick = function() {
+  modal1.style.display = "block";
+}
+
+btn3.onclick = function() {
+  modal2.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span1.onclick = function() {
+  modal.style.display = "none";  
+}
+span2.onclick = function() {
+  modal1.style.display = "none";  
+}
+span3.onclick = function() {
+  modal2.style.display = "none";  
+}
+
+
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+
+window.onclick = function(event) {
+  if (event.target == modal1) {
+    modal1.style.display = "none";
+  }
+}
+window.onclick = function(event) {
+  if (event.target == modal2) {
+    modal2.style.display = "none";
+  }
+}
+
+</script>
+
+</body>
+</html>

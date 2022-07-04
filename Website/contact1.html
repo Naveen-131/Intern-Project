@@ -1,0 +1,172 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Crescent Technosoft - Contact Form</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+    <link rel="icon" href="Images\clogo.jpg">
+    <link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Fjalla+One|Lobster|Nunito|Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\xampp\htdocs\Intern\font-mfizz-2.4.1\font-mfizz.css">
+
+</head>
+
+<style>
+
+#form_container
+{
+	padding:15px 15px;
+	margin-top:15px;
+	background: rgba(0,0,0,0.5);
+	color:#fff;
+}
+body
+{
+	background-color: #000;
+	background-image: url("images/stduio-2035349_1280.jpg");
+	background-size: cover;
+	background-repeat:no-repeat;
+
+}
+.upload-btn-wrapper
+{
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file]
+{
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
+
+.scroll {
+    background-color: black;
+    position: fixed;
+    top: 0;
+    }
+
+    div.scroll a{
+    display: inline-block;
+    color: #ffad33;
+    text-align: end;
+    padding: 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-style: bold;
+    font-size: 28px;
+    }
+    div.scroll a:hover {
+      background-color: #777;
+      font-family: sans-serif;
+      font-style: bold;
+    }
+
+
+.slideshow_wrapper {
+  width:700px;
+  height:280px;
+  overflow: hidden;
+}
+
+
+.slide {
+
+  width:700px;
+  height: 270px;
+  position:static;
+  float:left;
+  overflow:hidden;
+}
+
+.slideshow img{
+  width:700px; height:250px;
+}
+
+
+
+a{
+  font-size: 18px;
+  color: red;
+  font-weight: bold;
+}
+ul,p
+{
+  display: table;
+  margin: 0 auto;
+  padding: 10px;
+  font-size: 22px;
+  text-shadow: 0.2px 0 1px blue;
+}
+li,p
+{
+  margin: 10px 0;
+}
+
+input
+{
+  width: 170px;
+}
+
+
+</style>
+<body >
+<div style="position: sticky;top: 0;" class="scroll">
+    <img style="margin-right: 30px;" src="Images\clogo.jpg" align= "left" width="170px" height="90px"><br>
+    <a href="redirect.php"><i class="fa fa-home">&nbsp;</i>Home</a>
+    <a href="signin.html"><i class="fa fa-sign-in">&nbsp;</i>Sign in</a>
+    <a href="Signup.html"><i class="fa fa-registered">&nbsp;</i>Sign Up</a>
+    <a href="contact.html"><i class="fa fa-user">&nbsp;</i>Contact us</a>
+    <a href="about.html"><i class="fa fa-question-circle-o">&nbsp;</i>Help Desk</a>
+    <a href="about.html"><i class="fa fa-street-view">&nbsp;</i>About us</a>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6 " id="form_container" style="position: static;">
+            <h2>Contact Us</h2>
+            <p> Please send your message below. We will get back to you at the earliest! </p>
+            <form method="post" action="help.php">
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for="name"> Your Name:</label>
+                        <input type="text" class="form-control"  name="name" style="width: 500px;">
+                    </div>
+                </div>
+                <div class="row">
+                <div class="col-sm-6 form-group">
+                    <label for="email"> Email:</label>
+                    <input type="email" class="form-control" name="email" style="width: 500px;">
+                </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6 form-group">
+                        <label for=""> Contact Number:</label>
+                        <input type="number" class="form-control" name="contact" style="width: 500px;">
+                    </div>
+
+                    <div class="col-sm-12 form-group">
+                        <label for="message"> Message:</label>
+                        <textarea class="form-control" name="message" rows="5" style="width: 500px;"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 form-group">
+                        <input type="submit" value ="Submit"style="margin-right:100px;" class="btn btn-lg btn-default pull-right">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+    </div>
+    <p style="font-size: 18px; font-family: sans-serif; color:#ffad33; text-align: center; float: center; font-weight: bold; margin-left:500px;">Crescent Tech &copy; 2019</p>
+</div>
+</body>
+</html>

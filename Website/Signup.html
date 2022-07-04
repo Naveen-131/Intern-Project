@@ -1,0 +1,164 @@
+<html>
+<head>
+	<title>Crescent Technosoft</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0">
+	<link rel="icon" href="Images\clogo.jpg">
+	<link href="https://fonts.googleapis.com/css?family=Anton|Black+Han+Sans|Fjalla+One|Lobster|Nunito|Roboto|Rubik" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script type="text/javascript">
+		function generate()
+		{
+			var alpha = new Array('A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z','a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z');
+			var i;
+			for(i=0;i<4;i++)
+			{
+				var a=alpha[Math.floor(Math.random()*alpha.length)];
+				var b=alpha[Math.floor(Math.random()*alpha.length)];
+				var c=alpha[Math.floor(Math.random()*alpha.length)];
+				var d=alpha[Math.floor(Math.random()*alpha.length)];
+			}
+			var code=a+''+b+''+''+c+''+d;
+			document.getElementById("txtip").value=code
+		} 
+		function validate()
+		{
+			var str1 = document.getElementById('txtip').value
+			var str2 = document.getElementById('txtip1').value
+			if (str1==str2)
+			{
+				 return true;
+              }
+              
+              else{       
+              			 return false;  
+              }
+          }
+         </script>
+    <style>
+    @import url("https://fonts.googleapis.com/css?family=Montserrat");
+    h1{color:black;}
+    h3,a{color: white;}
+    body{
+    	background-image: url("https://www.concrete5.org/application/files/1314/5392/0479/homepage_windmills.jpg");
+    	padding: 0;
+    	margin: 0;
+    	font-family: cursive;
+    }
+    .scroll {
+        background-color: black;
+        position: fixed;
+        top: 0;
+      }
+
+      div.scroll a{
+        display: inline-block;
+        color: #ffad33;
+        text-align: end;
+        padding: 20px;
+        text-decoration: none;
+        font-family: sans-serif;
+        font-style: bold;
+        font-size: 28px; 
+      }
+      div.scroll a:hover {
+        background-color: #777;
+        font-family: sans-serif;
+        font-style: bold;
+      }
+    input
+    {
+    	padding: 5px 10px;
+    	border-radius: 5px;
+    }
+    input:focus
+    {
+      box-shadow: 0 2px 3px red;
+    	
+    	padding: 5px; 
+    }
+    #a2
+    {
+    	align-content: center;
+    	background-image: url("https://www.xmple.com/wallpaper/linear-white-gradient-blue-1920x1080-c2-b0c4de-fff5ee-a-60-f-14.svg");
+    	background-size: 1000px 1000px;
+    	background-repeat: no-repeat;
+    	height: 460px;
+    	width: 580px;
+      margin-left: 400px;
+      padding: 20PX;
+    }
+    td
+    {
+       font-weight: bold;	
+       padding: 15px;
+       font-size: 18px;
+    }
+    #btn
+    {
+    	 background-color: black;
+         border: none;
+         color: white;
+         padding: 10px 50px;
+         text-align: center;
+         float:right;
+         margin-right: -220px;
+         margin-top: -10px;
+
+    }
+      </style>
+    </head>
+	<body onload="generate()">
+		<div style="position: sticky;top: 0;" class="scroll">
+      <img style="margin-right: 30px;" src="Images\clogo.jpg" align= "left" width="170px" height="90px"><br>
+      <a href="redirect.php"><i class="fa fa-home">&nbsp;</i>Home</a>
+      <a href="signin.html"><i class="fa fa-sign-in">&nbsp;</i>Sign in</a>
+      <a href="Signup.html"><i class="fa fa-registered">&nbsp;</i>Sign Up</a>
+      <a href="contact1.html"><i class="fa fa-user">&nbsp;</i>Contact us</a>
+      <a href="about.html"><i class="fa fa-question-circle-o">&nbsp;</i>Help Desk</a>
+      <a href="about.html"><i class="fa fa-street-view">&nbsp;</i>About us</a>
+    </div>
+		<br><br>
+		<div id="a2">
+		<center><h1 style="font-family: serif;"><i class="fa fa-registered">&nbsp;</i>Create your Account</h1></center>
+		<table>
+		<form id="f1" action="reg.php" method="post">
+			<tr>
+				<td>First Name:</td>
+				<td><input type="text" name="t1" size="30" required/></td>
+			</tr>
+			<tr>
+				<td>Email:</td>
+				<td><input type="email" name ="t2" size="30" required/></td>
+			</tr>
+			<tr>
+				<td>Password:</td> 
+				<td><input type="Password" name="t3" size="30" required/></td>
+			</tr>
+			<tr>
+				<td>Confirm Password:</td>
+				<td><input type="Password" name="t4" size="30" required/></td>
+			</tr>
+			<tr>
+				<td>Security Code:</td>
+				<td><input type="text" id = "txtip" size="11" required/>
+				<input type="text" id="txtip1" size="11" name="t5"><br><br></td>
+
+			</tr>
+			<tr>
+						<td>
+            <input type="Submit" name="btn" id="btn" value="Submit" onclick="validate()" align="right">
+
+				</td>
+				
+			</tr>
+
+		</form>
+</table>
+</div>
+<h3 style="margin-left: 400px; color: yellow; font-size:22px;">Already Have a Account? then signin here
+			<a style="font-size: 18px;font-weight: bold; color:yellow; font-size: 20px;" href="signin.html">Sign in</a></h3>
+        <p style="font-size: 18px; font-family: sans-serif; color:white; text-align: center; float: center; font-weight: bold; ">Crescent Tech &copy; 2019</p>
+	</body>
+</html>
